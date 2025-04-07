@@ -23,13 +23,6 @@ A hash table is created for the filtered values of the second array:
 The program checks for matching values from the first array in the hash table:
 - For every match, the pair of indices from both arrays and the shared value are stored.
 
-### 5. Result Output
-The program prints:
-- Filtered values of each array with their original indices.
-- All matched index-value pairs in the form:  
-  `A[i] == B[j] <Value: v>`
-
----
 
 ## Algorithmic Highlights
 
@@ -45,3 +38,16 @@ The program prints:
 ```bash
 g++ -o join_program main.cpp
 ./join_program
+```
+
+## Sample output
+
+```
+Matching and combining indices and values:-
+A[21] == B[34] <Value:: 132>
+A[21] == B[52] <Value:: 132>
+
+A[26] == B[134] <Value:: 135>
+A[36] == B[41] <Value:: 140>
+
+```
