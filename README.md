@@ -29,7 +29,7 @@ The program checks for matching values from the first array in the hash table:
 - **Random generation** with uniform distribution.
 - **Filtering** using simple value comparison with index tracking.
 - **Hash join** implemented using `unordered_map` for fast lookup.
-- Efficient **O(n)** average complexity for the join step due to hashing.
+- The time complexity for the join step is **O(m * k)**, where m is the size of Column A and k is the average indices per value in Column B.
 
 ---
 
